@@ -22,3 +22,11 @@ Vagrantfile.local
 bower_components
 node_modules
 npm-debug.log
+
+# Ignore console
+console/*
+patternlab/source/_twig-components/filters/render.filter.php
+patternlab/source/_twig-components/functions/url.function.php
+patternlab/source/css/
+patternlab/source/images/
+patternlab/source/js/
