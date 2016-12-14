@@ -17,7 +17,7 @@ machine:
 checkout:
     post:
         # Disable sendmail for local PHP for install.
-        - echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/sendmail_disable.ini
+        - echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv global)/etc/conf.d/sendmail_disable.ini
 
 ## Customize dependencies
 dependencies:
