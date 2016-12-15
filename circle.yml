@@ -3,7 +3,7 @@ machine:
         America/Los_Angeles
     php:
         version:
-            7.0.4
+            7.0.11
     environment:
         VENDOR_TAR: "vendor.tar"
         SIMPLETEST_DB: "sqlite://tmp/site.sqlite"
@@ -17,7 +17,7 @@ machine:
 checkout:
     post:
         # Disable sendmail for local PHP for install.
-        - echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/sendmail_disable.ini
+        - echo sendmail_path=`which true` >> /opt/circleci/php/versions/$(phpenv version-name)/etc/conf.d/sendmail_disable.ini
 
 ## Customize dependencies
 dependencies:
