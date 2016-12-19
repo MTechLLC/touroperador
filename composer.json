@@ -32,6 +32,7 @@
     "drupal/google_analytics": "~2",
     "drupal/inline_entity_form": "1.x-dev",
     "drupal/link_attributes": "~1",
+    "drupal/layout_plugin": "1.x-dev",
     "drupal/languageicons": "1.x-dev",
     "drupal/media_entity_audio": "1.x-dev",
     "drupal/media_entity_document": "~1",
