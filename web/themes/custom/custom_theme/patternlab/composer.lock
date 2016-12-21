@@ -90,6 +90,11 @@
                 "twig/twig": "<1.25"
             },
             "type": "patternlab-plugin",
+            "extra": {
+                "patches_applied": {
+                    "Adds Url object": "https://patch-diff.githubusercontent.com/raw/aleksip/plugin-data-transform/pull/11.patch"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "aleksip\\DataTransformPlugin\\": "src/",
