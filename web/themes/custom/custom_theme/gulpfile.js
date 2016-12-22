@@ -17,7 +17,8 @@ var processors = [
 // Source/destinations.
 var source = './patternlab/source/';
 var input = source + 'sass/style.scss';
-var output = source + 'css';
+var output = 'css';
+var output2 = source + 'css'
 var bowerComponents = 'bower_components';
 var patternlabLibraries = source + 'libraries';
 var drupalLibraries = '../../../libraries';
@@ -34,8 +35,8 @@ gulp.task('prod', ['bower', 'assets'], function () {
       outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(postcss(processors))
-    .pipe(gulp.dest(output))
-    .pipe(gulp.dest(drupalTheme + 'css'));
+    .pipe(gulp.dest(output2))
+    .pipe(gulp.dest(drupalTheme + output));
 });
 
 gulp.task('dev', ['bower', 'assets'], function () {
@@ -48,8 +49,8 @@ gulp.task('dev', ['bower', 'assets'], function () {
     }).on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(output))
-    .pipe(gulp.dest(drupalTheme + 'css'));
+    .pipe(gulp.dest(output2))
+    .pipe(gulp.dest(drupalTheme + output));
 });
 
 gulp.task('watch', function () {
@@ -134,7 +135,7 @@ gulp.task('javascript', function() {
 
 // Clean destinations.
 gulp.task('clean-pl-css', function() {
-  return gulp.src(output, {read: false})
+  return gulp.src(output2, {read: false})
     .pipe(clean());
 });
 gulp.task('clean-drupal-css', function() {
