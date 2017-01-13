@@ -1,0 +1,100 @@
+uuid: 0a2d860c-ae84-4410-9dbd-1daa60b4128f
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - yamlform_examples
+_core:
+  default_config_hash: RRynLPwRNW2OJBxhn6ohPJGEgM5a_R-RZaXEBw3tdxI
+uid: null
+template: false
+id: example_wizard
+title: 'Example: Wizard'
+description: 'Example of a multiple step ''wizard'' form.'
+elements: "information:\n  '#title': 'Your Information'\n  '#type': wizard_page\n  '#open': true\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n  gender:\n    '#type': radios\n    '#title': 'Gender'\n    '#options': gender\ncontact:\n  '#title': 'Contact Information'\n  '#type': wizard_page\n  '#open': true\n  email:\n    '#title': Email\n    '#type': email\n  phone:\n    '#title': Phone\n    '#type': tel\n  contact_via_phone:\n    '#type': radios\n    '#title': 'Can we contact you via phone?'\n    '#options': yes_no\nfeedback:\n  '#title': 'Your Feedback'\n  '#type': wizard_page\n  '#open': true\n  comments:\n    '#type': textarea\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_label: Apply
+  form_submit_attributes: {  }
+  form_exception_message: ''
+  form_closed_message: ''
+  form_confidential: false
+  form_confidential_message: ''
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_novalidate: false
+  form_unsaved: true
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_next_button_attributes: {  }
+  wizard_prev_button_label: ''
+  wizard_prev_button_attributes: {  }
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 2
+  preview_next_button_label: ''
+  preview_next_button_attributes: {  }
+  preview_prev_button_label: ''
+  preview_prev_button_attributes: {  }
+  preview_message: ''
+  draft: false
+  draft_auto_save: true
+  draft_button_label: ''
+  draft_button_attributes: {  }
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }

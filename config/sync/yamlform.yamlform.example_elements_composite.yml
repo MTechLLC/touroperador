@@ -1,0 +1,100 @@
+uuid: 2eadb026-525c-46ad-a4f9-9f4c03f794a3
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - yamlform_examples
+_core:
+  default_config_hash: 6qEMsDq_MKDa5ZOLHDL0tj4WRW9OLMPcngi685goGCU
+uid: null
+template: false
+id: example_elements_composite
+title: 'Example: Elements: Composite'
+description: 'Examples of composite elements, includes address, contact, and credit card.'
+elements: "yamlform_address_example:\n  '#type': details\n  '#title': Address\n  '#open': true\n  yamlform_address:\n    '#type': address\n    '#title': Address\nyamlform_contact_example:\n  '#type': details\n  '#title': Contact\n  '#open': true\n  yamlform_contact:\n    '#type': contact\n    '#title': Contact\nyamlform_creditcard_example:\n  '#type': details\n  '#title': 'Credit card'\n  '#open': true\n  yamlform_creditcard:\n    '#type': creditcard\n    '#title': 'Credit card'\nyamlform_location_example:\n  '#type': details\n  '#title': Location\n  '#open': true\n  yamlform_location:\n    '#type': location\n    '#title': Location\nyamlform_name_example:\n  '#type': details\n  '#title': Name\n  '#open': true\n  yamlform_name:\n    '#type': name\n    '#title': Name\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_label: ''
+  form_submit_attributes: {  }
+  form_exception_message: ''
+  form_closed_message: ''
+  form_confidential: false
+  form_confidential_message: ''
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_next_button_attributes: {  }
+  wizard_prev_button_label: ''
+  wizard_prev_button_attributes: {  }
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_next_button_attributes: {  }
+  preview_prev_button_label: ''
+  preview_prev_button_attributes: {  }
+  preview_message: ''
+  draft: false
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_button_attributes: {  }
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }

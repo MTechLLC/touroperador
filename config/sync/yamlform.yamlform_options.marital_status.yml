@@ -1,0 +1,12 @@
+uuid: 08187135-a7b4-47e3-b487-661c065f6a4a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - yamlform
+_core:
+  default_config_hash: 3Mf8w1QwdniOiKqNQUDMqHqjI9RiBwEDGPU3nnxJpGU
+id: marital_status
+label: 'Marital status'
+options: "Single: Single\nMarried: Married\nDivorced: Divorced\nWidowed: Widowed\n"

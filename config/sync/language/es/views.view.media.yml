@@ -23,6 +23,7 @@ display:
             last: 'Último »'
       fields:
         thumbnail__target_id:
+          label: Miniatura
           separator: ', '
         name:
           separator: ', '

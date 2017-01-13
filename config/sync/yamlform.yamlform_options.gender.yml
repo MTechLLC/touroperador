@@ -1,0 +1,12 @@
+uuid: 021ac91f-7283-44e8-a09c-4268dd1c152f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - yamlform
+_core:
+  default_config_hash: zgotMh3Vq58xLWhp4Fe2gWCe5rc-kyAtt04cX1sQ4Ro
+id: gender
+label: Gender
+options: "Male: Male\nFemale: Female\nTransgender: Transgender\n"

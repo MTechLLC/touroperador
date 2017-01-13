@@ -1,0 +1,100 @@
+uuid: 44e09e65-13ee-406d-ad17-e4402509527b
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - yamlform_examples
+_core:
+  default_config_hash: hWO0TLlBfzkhXcLZYXxlXEedm5RGb5VxIx_zMsZXW8g
+uid: null
+template: false
+id: example_elements_states
+title: 'Example: Elements: Condition Logic'
+description: 'Examples of elements using conditional logic.'
+elements: "checkbox_example:\n  '#type': details\n  '#title': 'Checkbox example'\n  '#open': true\n  checkbox:\n    '#type': checkbox\n    '#title': 'Please check this box'\n  checkbox_explain:\n    '#type': textarea\n    '#title': 'Please explain why you checked the above box'\n    '#states':\n      visible:\n        ':input[name=\"checkbox\"]':\n          checked: true\n      required:\n        ':input[name=\"checkbox\"]':\n          checked: true\nselect_example:\n  '#type': details\n  '#title': 'Select with other example'\n  '#open': true\n  select:\n    '#type': select\n    '#title': 'Please select ''other'' in the below select menu.'\n    '#options':\n      1: One\n      2: Two\n      3: Three\n      other: 'Other...'\n  select_other:\n    '#type': textfield\n    '#attributes':\n      placeholder: 'Enter other...'\n    '#states':\n      visible:\n        ':input[name=\"select\"]':\n          value: other\n      required:\n        ':input[name=\"select\"]':\n          value: other\nselect_multiple_example:\n  '#type': details\n  '#title': 'Select multiple example'\n  '#open': true\n  select_multiple:\n    '#type': select\n    '#title': 'Please select ''One'' or ''Two'' in the below select menu.'\n    '#options':\n      1: One\n      2: Two\n      3: Three\n      4: Four\n  select_multiple_other:\n    '#type': textfield\n    '#attributes':\n      placeholder: 'Enter other...'\n    '#states':\n      visible:\n        - ':input[name=\"select_multiple\"]':\n            - value: 1\n        - or\n        - ':input[name=\"select_multiple\"]':\n            - value: 2\n      required:\n        - ':input[name=\"select_multiple\"]':\n            - value: 1\n        - or\n        - ':input[name=\"select_multiple\"]':\n            - value: 2\nradios_example:\n  '#type': details\n  '#title': 'Radio buttons with other example'\n  '#open': true\n  radios:\n    '#type': radios\n    '#title': 'Please select ''other'' from the below radio buttons.'\n    '#options':\n      1: One\n      2: Two\n      3: Three\n      other: 'Other...'\n  radios_other:\n    '#type': textfield\n    '#attributes':\n      placeholder: 'Enter other...'\n    '#states':\n      visible:\n        ':input[name=\"radios\"]':\n          value: other\n      required:\n        ':input[name=\"radios\"]':\n          value: other\ncheckbox_more_example:\n  '#type': details\n  '#title': 'Checkbox with more information example'\n  '#open': true\n  checkbox_more:\n    '#type': checkbox\n    '#title': 'Please check this box to enter more information'\n  checkbox_more_details:\n    '#type': 'details'\n    '#title': 'More information'\n    '#open': true\n    '#states':\n      expanded:\n        ':input[name=\"checkbox_more\"]':\n          checked: true\n    checkbox_more_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#states':\n        required:\n          ':input[name=\"checkbox_more\"]':\n            checked: true\n    checkbox_more_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#states':\n        required:\n          ':input[name=\"checkbox_more\"]':\n            checked: true\nfilled_example:\n  '#type': details\n  '#title': 'Text field filled example'\n  '#open': true\n  filled:\n    '#type': textfield\n    '#title': 'Fill in the below text field to enable and require the next text field.'\n  filled_next:\n    '#type': textfield\n    '#title': 'The next text field'\n    '#states':\n      enabled:\n        ':input[name=\"filled\"]':\n          filled: true\n      required:\n        ':input[name=\"filled\"]':\n          filled: true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_label: ''
+  form_submit_attributes: {  }
+  form_exception_message: ''
+  form_closed_message: ''
+  form_confidential: false
+  form_confidential_message: ''
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_next_button_attributes: {  }
+  wizard_prev_button_label: ''
+  wizard_prev_button_attributes: {  }
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_next_button_attributes: {  }
+  preview_prev_button_label: ''
+  preview_prev_button_attributes: {  }
+  preview_message: ''
+  draft: false
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_button_attributes: {  }
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }

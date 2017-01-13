@@ -1,0 +1,12 @@
+uuid: 33cffbb0-16e2-42a3-af60-da120e1dd220
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - yamlform
+_core:
+  default_config_hash: qOi_pvfr0IJ9ZZs3tbQ0LFnoHzl7xGCIEAIEc_5uP-I
+id: time_zones
+label: 'Time zones'
+options: ''
