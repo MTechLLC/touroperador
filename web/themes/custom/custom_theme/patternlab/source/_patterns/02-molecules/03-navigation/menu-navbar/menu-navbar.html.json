@@ -1,0 +1,37 @@
+{
+    "menu_level": 0,
+    "items": [
+        {
+            "title": "Menu item 1",
+            "url": "",
+            "is_expanded": true,
+            "sub_items": [
+                {
+                    "title": "Sub Menu item 1",
+                    "url": ""
+                },
+                {
+                    "title": "Sub Menu item 2",
+                    "url": ""
+                },
+                {
+                    "title": "Sub Menu item 3",
+                    "url": "",
+                    "separator": true
+                },
+                {
+                    "title": "Sub Menu item 4",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "title": "Menu item 2",
+            "url": ""
+        },
+        {
+            "title": "Menu item 3",
+            "url": ""
+        }
+    ]
+}

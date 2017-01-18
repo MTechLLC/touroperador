@@ -288,7 +288,7 @@ $settings['install_profile'] = 'config_installer';
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'LoeYEgK5sFXmTS0lcJemr34EEXMXMkGl041We5fHvh63qF3I2CXzJpavxc99O4Lmx-NyTz8CsQ';
+$settings['hash_salt'] = 'Grd-jK59i9CNZ5nJe8kCaCRVSTMnoXiZX2Y9cSsUtsJEIxKGrr6yIue1bya7eBzSRJdV3hiRVg';
 
 /**
  * Deployment identifier.
@@ -766,3 +766,13 @@ if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
     include $app_root . '/' . $site_path . '/settings.local.php';
 }
+$databases['default']['default'] = array (
+  'database' => 'drupal',
+  'username' => 'drupal',
+  'password' => 'drupal',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
