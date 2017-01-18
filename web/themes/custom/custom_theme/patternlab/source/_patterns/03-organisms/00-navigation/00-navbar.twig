@@ -16,32 +16,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {%
-        set header_classes = [
-          'list-unstyled',
-          'list-inline',
-        ]
-      %}
-      {% include 'molecules-links.html' with {
-        'links': header_links,
-        'attributes': header_attributes.addClass(header_classes),
-      } only %}
+      {{ brand }}
     </div>
 
     <div id="navbar-collapse" class="collapse navbar-collapse">
-      {%
-        set menu_classes = [
-          "nav",
-          "navbar-nav",
-        ]
-      %}
-      {% include 'molecules-links.html' with {
-        'links': menu_links,
-        'attributes': menu_attributes.addClass(menu_classes),
-      } only %}
-
-			{% include 'molecules-block-language-switch.html' %}
-
+      {{ navigation_menus }}
     </div>
   {% if not navbar_attributes.hasClass('container') %}
   </nav>

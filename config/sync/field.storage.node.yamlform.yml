@@ -1,0 +1,22 @@
+uuid: fab2a7f1-bc61-4be7-9144-d55249e92d08
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - yamlform
+_core:
+  default_config_hash: mhZqeDVdGuBZJHONz_HCbNKJvRkpaLhYMrLYmnZoWks
+id: node.yamlform
+field_name: yamlform
+entity_type: node
+type: yamlform
+settings:
+  target_type: yamlform
+module: yamlform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

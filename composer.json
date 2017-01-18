@@ -41,6 +41,7 @@
     "drupal/ng_lightbox": "~1",
     "drupal/paragraphs": "1.x-dev",
     "drupal/pathauto": "~1",
+    "drupal/yamlform": "1.x-dev",
     "drupal/redirect": "~1",
     "drupal/simple_sitemap": "2.x-dev",
     "drupal/smart_trim": "1.x-dev",

@@ -2,55 +2,128 @@
   "container": "container",
   "navbar_attributes": {
     "Attribute()": {
-      "class": ["navbar-inverse","navigation-style"]
+      "class": [
+        "navbar-default"
+      ]
     }
   },
-  "header_attributes": {
-    "Attribute()": {}
-  },
-  "header_links": {
-    "home": {
-      "link": "<a class=\"navbar-brand\" href=\"#\"><i class='fa fa-drupal fa-2x'></i></a>",
-      "attributes": {
-        "Attribute()": {
-          "class": ["logo-heading"]
+  "brand": {
+    "include()": {
+      "pattern": "molecules-menu.html",
+      "with": {
+        "items": [
+          {
+            "title": "",
+            "url": {
+              "Url()": {
+                "url": "#",
+                "options": {
+                  "attributes": {
+                    "class": "fa fa-drupal fa-2x"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "attributes": {
+          "Attribute()": {
+            "class": [
+              "navbar-nav"
+            ]
+          }
         }
       }
     }
   },
-  "menu_attributes": {
-    "Attribute()": {}
-  },
-  "menu_links": {
-    "home": {
-      "link": "<a href=\"#\"><i class='fa fa-home'></i> Home</a>",
-      "attributes": {
-        "Attribute()": {}
+  "navigation_menus": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-menu.html",
+          "with": {
+            "items": [
+              {
+                "title": "Home",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-home"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "title": "Tours",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-sun-o"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "title": "Packages",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa shopping-bag"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "title": "Additional",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-buysellads"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "title": "Reservations",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-clone"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "attributes": {
+              "Attribute()": {
+                "class": [
+                  "navbar-nav"
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-block-language-switch.html"
+        }
       }
-    },
-    "tours": {
-      "link": "<a href=\"#\"><i class='fa fa-sun-o'></i> Tours</a>",
-      "attributes": {
-        "Attribute()": {}
-      }
-    },
-    "packages": {
-      "link": "<a href=\"#\"><i class='fa fa-shopping-bag'></i> Packages</a>",
-      "attributes": {
-        "Attribute()": {}
-      }
-    },
-    "additional": {
-      "link": "<a href=\"#\"><i class='fa fa-buysellads'></i> Additional Services</a>",
-      "attributes": {
-        "Attribute()": {}
-      }
-    },
-    "reservations": {
-      "link": "<a href=\"#\"><i class='fa fa-clone'></i> Reservations</a>",
-      "attributes": {
-        "Attribute()": {}
-      }
-    }
+    ]
   }
 }

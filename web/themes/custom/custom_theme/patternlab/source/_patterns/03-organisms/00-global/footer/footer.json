@@ -1,5 +1,9 @@
 {
-  "container": "container",
+  "center_footer": {
+    "Attribute()": {
+      "class":["footer","container", "center-footer"]
+    }
+  },
   "footer": {
     "include()": {
       "pattern": "molecules-menu.html",

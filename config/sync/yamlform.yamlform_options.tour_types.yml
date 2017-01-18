@@ -1,0 +1,7 @@
+uuid: b6f36eeb-c228-483c-9f50-429ed8d184ff
+langcode: en
+status: true
+dependencies: {  }
+id: tour_types
+label: 'Tour Types'
+options: "' Mombacho Volcano ': ' Mombacho Volcano '\n'Masaya Volcano': 'Masaya Volcano'\nIsletas: Isletas\n'City Tour Granada': 'City Tour Granada'\n'Diving lake Apoyo': 'Diving lake Apoyo'\n'Island Zapatera': 'Island Zapatera'\n'Volcano Cerro Negro': 'Volcano Cerro Negro'\n'Telica Twilight Tour': 'Telica Twilight Tour'\n'Telica Overnight': 'Telica Overnight'\n'Tour Flor de Caña Rum Factory': 'Tour Flor de Caña Rum Factory'\n'Horseback Asososca ': 'Horseback Asososca '\n'City Tour Leon': 'City Tour Leon'\n'Isla Juan Venado': 'Isla Juan Venado'\n'Ruins Leon Viejo': 'Ruins Leon Viejo'\n'San Cristobal Volcano': 'San Cristobal Volcano'\n'Volcano Cosigüina': 'Volcano Cosigüina'\n'El Hoyo Volcano': 'El Hoyo Volcano'\n'San Jacinto mud pools': 'San Jacinto mud pools'\n'Corn Island': 'Corn Island'\n'Bluefields Hot Spots': 'Bluefields Hot Spots'\n'Ometepe Around the Island': 'Ometepe Around the Island'\n'City Tour Matagalpa': 'City Tour Matagalpa'\nOmetepe: Ometepe\n'Somoto Canyon, Estelí & Miraflor': 'Somoto Canyon, Estelí & Miraflor'\n'Cerro Apante': 'Cerro Apante'\n'City Tour Managua': 'City Tour Managua'\n'Río San Juan': 'Río San Juan'\n'Montelimar Hotel': 'Montelimar Hotel'\n'Grey Town & Rio Indio Lodge': 'Grey Town & Rio Indio Lodge'\n'San Cristobal Overnight': 'San Cristobal Overnight'\n'Viacrucis Aquatic': 'Viacrucis Aquatic'\n'Ruins Leon Viejo & Asososca Crater Lake': 'Ruins Leon Viejo & Asososca Crater Lake'\n"
