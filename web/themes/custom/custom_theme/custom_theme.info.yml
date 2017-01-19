@@ -22,6 +22,7 @@ regions:
 libraries:
   - custom_theme/global-styling
   - custom_theme/bootstrap-scripts
+  - custom_theme/font-awesome
 
 # For compatibility with Pattern Lab templates; this list must
 # always be the folders immediately under the `$sourceDir` patterns folder
