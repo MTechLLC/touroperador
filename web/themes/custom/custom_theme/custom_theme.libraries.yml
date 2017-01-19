@@ -31,3 +31,9 @@ jquery-match-height:
   dependencies:
     - core/drupal
     - core/jquery
+
+font-awesome:
+  css:
+    theme:
+      /libraries/font-awesome/css/font-awesome.min.css: {}
+
