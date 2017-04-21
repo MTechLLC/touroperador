@@ -8,8 +8,8 @@ dependencies:
     - custom_theme
 id: languageswitcher
 theme: custom_theme
-region: navigation
-weight: 0
+region: sidebar_second
+weight: -7
 provider: null
 plugin: 'language_block:language_interface'
 settings:
