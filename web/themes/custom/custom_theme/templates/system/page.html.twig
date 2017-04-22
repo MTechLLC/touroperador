@@ -10,7 +10,12 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-
+    {% include '@organisms/00-navigation/00-navbar.twig'
+      with {
+        'container': container,
+        'menu_links': page.navigation
+      }
+    %}
   {% endblock %}
 {% endif %}
 
@@ -98,6 +103,7 @@
 {% if page.footer %}
   {% include '@organisms/00-global/footer/footer.twig'
     with {
+      'container': container,
       'footer': page.footer
     }
   %}
