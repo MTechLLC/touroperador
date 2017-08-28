@@ -25,7 +25,7 @@
     "drupal/components": "~1",
     "drupal/config_installer": "~1",
     "drupal/console": "~1",
-    "drupal/core": "~8",
+    "drupal/core": "8.3.x-dev",
     "drupal/easy_breadcrumb": "1.x-dev",
     "drupal/entity_browser": "1.x-dev",
     "drupal/file_browser": "1.x-dev",
@@ -36,13 +36,13 @@
     "drupal/media_entity_audio": "1.x-dev",
     "drupal/media_entity_document": "~1",
     "drupal/media_entity_image": "~1",
-    "drupal/migrate_plus": "~3",
+    "drupal/migrate_plus": "3.x-dev",
     "drupal/migrate_tools": "~3",
     "drupal/ng_lightbox": "~1",
     "drupal/paragraphs": "1.x-dev",
     "drupal/pathauto": "~1",
-    "drupal/yamlform": "1.x-dev",
     "drupal/redirect": "~1",
+    "drupal/yamlform": "1.x-dev",
     "drupal/simple_sitemap": "2.x-dev",
     "drupal/smart_trim": "1.x-dev",
     "drupal/twig_tweak": "~1",
@@ -56,13 +56,13 @@
     "behat/mink-extension": "~2.2",
     "behat/mink-goutte-driver": "~1.2",
     "behat/mink-selenium2-driver": "~1.3",
-    "drupal/drupal-extension": "~3.1",
+    "drupal/drupal-extension": "~3.2",
     "jcalderonzumba/behat-phantomjs-extension": "^0.1.3",
     "jcalderonzumba/gastonjs": "^1.1@dev",
     "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
     "mikey179/vfsStream": "~1.2",
-    "phpunit/phpunit": "~4",
-    "symfony/css-selector": "2.7.*"
+    "phpunit/phpunit": "~5",
+    "symfony/css-selector": "2.8.*"
   },
   "replace": {
     "drupal/drupal": "*",
@@ -76,6 +76,7 @@
     ]
   },
   "config" : {
+    "secure-http": false,
     "optimize-autoloader": true,
     "preferred-install": "dist",
     "sort-packages": true
@@ -103,9 +104,7 @@
     },
     "patches": {
       "drupal/core": {
-        "Redirect to install.php on empty DB": "https://www.drupal.org/files/issues/728702-163.patch",
-        "Inline responsive image styles,etc": "https://www.drupal.org/files/issues/allow_image_style_to_be-2061377-224.patch",
-        "Categorize migrations according to their type": "https://www.drupal.org/files/issues/categorize_migrations-2711099-49.patch"
+        "Inline responsive image styles,etc": "https://www.drupal.org/files/issues/2061377-241.patch"
       },
       "drupal/config_installer": {
         "config_installer_install_uninstalled_profile_dependencies() assumes too much": "https://www.drupal.org/files/issues/config_installer_2729243_2.patch"
