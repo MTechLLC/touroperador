@@ -59,7 +59,7 @@ installed_extras:
   - xdebug
   # - xhprof
 
-drush_version: "8.x"
+drush_version: "8.1.10"
 drush_keep_updated: true
 drush_composer_cli_options: "--prefer-dist --no-interaction -o --no-dev"
 
@@ -80,4 +80,9 @@ mysql_max_allowed_packet: 512M
 
 # Node.js configuration (if enabled above).
 # Valid examples: "0.10", "0.12", "4.x", "5.x".
-nodejs_version: "4.x"
+nodejs_version: "6.x"
+nodejs_npm_global_packages:
+  - name: yarn
+
+# Other configuration.
+ssh_home: "{{ drupal_core_path }}"
