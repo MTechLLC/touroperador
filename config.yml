@@ -2,7 +2,7 @@
 
 # If you need to run multiple instances of Drupal VM, set a unique hostname,
 # machine name, and IP address for each instance.
-vagrant_hostname: touroperador.app
+vagrant_hostname: touroperador.local
 vagrant_machine_name: touroperador
 vagrant_ip: 0.0.0.0
 
