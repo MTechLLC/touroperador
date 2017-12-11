@@ -2,7 +2,7 @@
 
 # If you need to run multiple instances of Drupal VM, set a unique hostname,
 # machine name, and IP address for each instance.
-vagrant_hostname: touroperador.dev
+vagrant_hostname: touroperador.app
 vagrant_machine_name: touroperador
 vagrant_ip: 0.0.0.0
 
@@ -59,7 +59,7 @@ installed_extras:
   - xdebug
   # - xhprof
 
-drush_version: "8.x"
+drush_version: "8.1.15"
 drush_keep_updated: true
 drush_composer_cli_options: "--prefer-dist --no-interaction -o --no-dev"
 
