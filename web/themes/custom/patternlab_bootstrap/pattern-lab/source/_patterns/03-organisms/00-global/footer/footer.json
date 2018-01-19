@@ -1,5 +1,5 @@
 {
-  "powered_by": {
+  "footer": {
     "include()": {
       "pattern": "molecules-block--powered-by",
       "with": {
