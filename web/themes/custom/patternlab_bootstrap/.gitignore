@@ -1,0 +1,8 @@
+# Generated files
+/css
+/bootstrap
+/images
+/js
+bower_components
+*.css.map
+.DS_Store

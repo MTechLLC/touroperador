@@ -1,0 +1,46 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: PatternLab Bootstrap Theme
+description: Uses the PatternLab Bootstrap Theme framework Sass.
+package: Bootstrap
+
+regions:
+  navigation: Navigation
+  navigation_collapsible: Navigation (Collapsible)
+  header: Top Bar
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: Primary
+  sidebar_second: Secondary
+  footer: Footer
+  page_top: Page top
+  page_bottom: Page bottom
+
+libraries:
+  - patternlab_bootstrap/global-styling
+  - patternlab_bootstrap/bootstrap-scripts
+  - patternlab_bootstrap/font-awesome
+
+# For compatibility with Pattern Lab templates; this list must
+# always be the folders immediately under the `$sourceDir` patterns folder
+# `$sourceDir` = defined in `patternlab/config/config.yml` under `sourceDir
+# patterns folder = `$sourceDir` + `_patterns/`
+component-libraries:
+  atoms:
+    paths:
+      - pattern-lab/source/_patterns/01-atoms
+  molecules:
+    paths:
+      - pattern-lab/source/_patterns/02-molecules
+  organisms:
+    paths:
+      - pattern-lab/source/_patterns/03-organisms
+  templates:
+    paths:
+      - pattern-lab/source/_patterns/04-templates
+  pages:
+    paths:
+      - pattern-lab/source/_patterns/05-pages

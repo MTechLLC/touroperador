@@ -1,0 +1,111 @@
+{
+  "container": "container",
+  "navbar_attributes": {
+    "Attribute()": {
+      "class": [
+        "navbar-default"
+      ]
+    }
+  },
+  "brand": {
+    "include()": {
+      "pattern": "molecules-block--system-branding-block.html",
+      "with": {
+        "site_logo": "../../../../images/logo/logo.svg",
+        "site_name": "",
+        "site_slogan": "",
+        "t": ""
+      }
+    }
+  },
+  "navigation_menus": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-menu.html",
+          "with": {
+            "items": [
+              {
+                "title": "Home",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-home"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "title": "About",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-sun-o"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "title": "Services",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-handshake-o"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "title": "Portfolio",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-buysellads"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "title": "Contact",
+                "url": {
+                  "Url()": {
+                    "url": "#",
+                    "options": {
+                      "attributes": {
+                        "class": "fa fa-clone"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "attributes": {
+              "Attribute()": {
+                "class": [
+                  "navbar-nav"
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-block-language-switch.html"
+        }
+      }
+    ]
+  }
+}
