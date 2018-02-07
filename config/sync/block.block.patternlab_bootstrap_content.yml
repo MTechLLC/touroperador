@@ -1,15 +1,15 @@
-uuid: 84460080-51ff-42a9-80f9-5c02a7c8bcca
+uuid: 93327438-a3d4-4a0c-ac25-1250b6a378be
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - custom_theme
+    - patternlab_bootstrap
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: custom_theme_content
-theme: custom_theme
+id: patternlab_bootstrap_content
+theme: patternlab_bootstrap
 region: content
 weight: 0
 provider: null

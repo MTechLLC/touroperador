@@ -1,4 +1,4 @@
-uuid: a479bd45-6fec-484e-af5c-45b3daf13ab5
+uuid: 117058f0-5ca6-4b89-938a-36e2fc611586
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - custom_theme
+    - patternlab_bootstrap
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: custom_theme_footer
-theme: custom_theme
+id: patternlab_bootstrap_footer
+theme: patternlab_bootstrap
 region: footer
 weight: -7
 provider: null

@@ -1,4 +1,4 @@
-uuid: 0690f577-9411-480c-b0a9-74d04e3d0137
+uuid: 19261203-1e67-4369-8e5b-2e94b1aa1e0a
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - custom_theme
-id: servicesmenu
-theme: custom_theme
+    - patternlab_bootstrap
+id: patternlab_bootstrap_servicesmenu
+theme: patternlab_bootstrap
 region: navigation
 weight: -7
 provider: null

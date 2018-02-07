@@ -1,13 +1,13 @@
-uuid: 66786a95-7610-4e2b-afad-00470bf3a0a0
+uuid: 36ba0091-d6d2-4d1e-85b7-77dfc1d75f41
 langcode: en
 status: true
 dependencies:
   module:
     - language
   theme:
-    - custom_theme
-id: languageswitcher
-theme: custom_theme
+    - patternlab_bootstrap
+id: patternlab_bootstrap_languageswitcher
+theme: patternlab_bootstrap
 region: navigation
 weight: 0
 provider: null

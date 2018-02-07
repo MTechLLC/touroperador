@@ -29,6 +29,7 @@ widgets:
       media_bundle: document
       upload_location: 'public://[date:custom:Y]-[date:custom:m]'
       submit_text: 'Select document'
+      multiple: true
     uuid: fce1eab5-27e8-4031-a904-bdcf1de46c15
     weight: 1
     label: 'Upload Document'
