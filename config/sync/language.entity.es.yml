@@ -1,9 +1,0 @@
-uuid: 9efa75be-6c3f-4bc5-b6ca-0069e23f5201
-langcode: es
-status: true
-dependencies: {  }
-id: es
-label: Spanish
-direction: ltr
-weight: 1
-locked: false

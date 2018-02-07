@@ -1,8 +1,0 @@
-uuid: ab9abb31-c1e9-4166-b267-dda3c4e721c6
-langcode: en
-status: true
-dependencies: {  }
-id: services-menu
-label: 'Services Menu'
-description: 'Basic services menu'
-locked: false
