@@ -1,0 +1,22 @@
+uuid: eabc64bc-7add-48a4-81f6-6d099c5295eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - patternlab_bootstrap
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: patternlab_bootstrap_help
+theme: patternlab_bootstrap
+region: help
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

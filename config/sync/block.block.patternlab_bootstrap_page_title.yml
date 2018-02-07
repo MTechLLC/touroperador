@@ -1,0 +1,20 @@
+uuid: d85869b4-b5a4-4b81-9a67-0fef9849f7e7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - patternlab_bootstrap
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: patternlab_bootstrap_page_title
+theme: patternlab_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

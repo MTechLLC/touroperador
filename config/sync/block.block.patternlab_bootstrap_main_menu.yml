@@ -1,4 +1,4 @@
-uuid: f324fa79-dca3-4c01-8761-2333f30e10f0
+uuid: 1dbae1ab-7390-4011-80d1-f3f644469fb8
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - patternlab_bootstrap
 _core:
   default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
-id: bootstrap_main_menu
-theme: bootstrap
+id: patternlab_bootstrap_main_menu
+theme: patternlab_bootstrap
 region: navigation_collapsible
 weight: -7
 provider: null

@@ -1,0 +1,20 @@
+uuid: 5c8ca5eb-fd01-4c7c-a5d6-f55f6e2bd267
+langcode: en
+status: true
+dependencies:
+  theme:
+    - patternlab_bootstrap
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: patternlab_bootstrap_local_actions
+theme: patternlab_bootstrap
+region: header
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
