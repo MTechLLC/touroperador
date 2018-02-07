@@ -13,9 +13,16 @@
     }
   ],
   "require": {
-    "composer/installers": "~1",
-    "cweagans/composer-patches": "~1",
-    "drupal-composer/drupal-scaffold": "~2",
+    "composer/installers": "^1.2",
+    "cweagans/composer-patches": "^1.6",
+    "drupal-composer/drupal-scaffold": "^2.2",
+    "drupal/console": "^1.0.2",
+    "drupal/core": "~8.4",
+    "drush/drush": "~8.0|^9.0.0-beta8",
+    "geerlingguy/drupal-vm": "^4.7",
+    "webflo/drupal-finder": "^1.0.0",
+    "webmozart/path-util": "^2.3",
+
     "drupal/admin_toolbar": "~1",
     "drupal/advagg": "2.x-dev",
     "drupal/audiofield": "~1",
@@ -24,8 +31,6 @@
     "drupal/colorbox": "1.x-dev",
     "drupal/components": "~1",
     "drupal/config_installer": "~1",
-    "drupal/console": "~1",
-    "drupal/core": "~8",
     "drupal/easy_breadcrumb": "1.x-dev",
     "drupal/entity_browser": "1.x-dev",
     "drupal/file_browser": "1.x-dev",
@@ -47,22 +52,21 @@
     "drupal/smart_trim": "1.x-dev",
     "drupal/twig_tweak": "~1",
     "drupal/video_embed_field": "~1",
-    "drush/config-extra": "~1",
-    "drush/drush": "~8",
-    "geerlingguy/drupal-vm": "dev-master"
+    "drush/config-extra": "~1"
   },
   "require-dev": {
+    "behat/mink": "~1.7",
+    "behat/mink-goutte-driver": "~1.2",
+    "jcalderonzumba/gastonjs": "~1.0.2",
+    "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+    "mikey179/vfsstream": "~1.2",
+    "phpunit/phpunit": ">=4.8.28 <5",
+    "symfony/css-selector": "~2.8|~3.0",
     "behat/behat": "~3.0",
     "behat/mink-extension": "~2.2",
-    "behat/mink-goutte-driver": "~1.2",
     "behat/mink-selenium2-driver": "~1.3",
     "drupal/drupal-extension": "~3.1",
-    "jcalderonzumba/behat-phantomjs-extension": "^0.1.3",
-    "jcalderonzumba/gastonjs": "^1.1@dev",
-    "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
-    "mikey179/vfsStream": "~1.2",
-    "phpunit/phpunit": "~4",
-    "symfony/css-selector": "2.7.*"
+    "jcalderonzumba/behat-phantomjs-extension": "^0.1.3"
   },
   "replace": {
     "drupal/drupal": "*",
@@ -104,8 +108,7 @@
     "patches": {
       "drupal/core": {
         "Inline responsive image styles,etc": "https://www.drupal.org/files/issues/allow_image_style_to_be-2061377-224.patch",
-        "Categorize migrations according to their type": "https://www.drupal.org/files/issues/categorize_migrations-2711099-49.patch",
-        "Cannot redeclare Drupal Core Database Connection::getSQLState()": "https://www.drupal.org/files/issues/728702-163.patch"
+        "Categorize migrations according to their type": "https://www.drupal.org/files/issues/categorize_migrations-2711099-49.patch"
       }
     },
     "drupal-scaffold": {
