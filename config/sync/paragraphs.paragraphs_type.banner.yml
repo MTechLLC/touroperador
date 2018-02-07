@@ -1,7 +1,0 @@
-uuid: 2b373730-8fe9-4f45-b7a0-f065d0c283e1
-langcode: en
-status: true
-dependencies: {  }
-id: banner
-label: Banner
-behavior_plugins: {  }

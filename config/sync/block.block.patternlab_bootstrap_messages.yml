@@ -1,0 +1,22 @@
+uuid: be615e84-7fc6-4ab9-b2d7-bf63fe6a12b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - patternlab_bootstrap
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: patternlab_bootstrap_messages
+theme: patternlab_bootstrap
+region: header
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

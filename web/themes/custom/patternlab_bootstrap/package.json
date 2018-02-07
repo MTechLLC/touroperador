@@ -1,0 +1,32 @@
+{
+  "name": "patternlab_bootstrap",
+  "version": "1.0.0",
+  "description": "Patternlab Drupal 8 Bootstrap",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "gulp": "gulp",
+    "bower": "bower"
+  },
+  "author": "MTech LLC",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "bootstrap-sass": "^3.3.7",
+    "ckeditor": "^4.8.0",
+    "dropzone": "^5.2.0",
+    "es6-promise": "^4.0.3",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "imagesloaded": "^4.1.4",
+    "jquery": "^3.2.1",
+    "jquery-colorbox": "^1.6.4",
+    "masonry": "0.0.2",
+    "matchheight": "^0.1.0",
+    "run-sequence": "^1.2.2"
+  }
+}

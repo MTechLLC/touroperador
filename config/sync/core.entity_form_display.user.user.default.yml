@@ -1,4 +1,4 @@
-uuid: 44d52b38-5ef1-41c3-92b3-21bc147ef55b
+uuid: f25ac3a5-f36a-40eb-a991-62b72a070594
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,9 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
-    - path
     - user
 _core:
-  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -18,19 +17,16 @@ mode: default
 content:
   account:
     weight: -10
+    region: content
   contact:
     weight: 5
-  google_analytics:
-    weight: 3
+    region: content
   language:
     weight: 0
-  path:
-    type: path
-    weight: 30
-    settings: {  }
-    third_party_settings: {  }
+    region: content
   timezone:
     weight: 6
+    region: content
   user_picture:
     type: image_image
     settings:
@@ -38,5 +34,5 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     weight: -1
-hidden:
-  langcode: true
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 434ad97b-a042-463e-8c37-a0901424db4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - patternlab_bootstrap
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: patternlab_bootstrap_powered
+theme: patternlab_bootstrap
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
