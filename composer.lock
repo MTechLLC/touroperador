@@ -7952,53 +7952,6 @@
             "time": "2017-12-06T20:35:40+00:00"
         },
         {
-            "name": "drupal/yamlform",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/yamlform",
-                "reference": "9da2dff280b7cdbbfb25757f580c494442f020f2"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "require-dev": {
-                "drupal/devel": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta29+2-dev",
-                    "datestamp": "1482854283",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Rockowitz (jrockowitz)",
-                    "homepage": "https://www.drupal.org/u/jrockowitz",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Enables the creation of forms and questionnaires.",
-            "homepage": "https://drupal.org/project/yamlform",
-            "support": {
-                "source": "http://cgit.drupalcode.org/yamlform",
-                "issues": "https://drupal.org/project/issues/yamlform"
-            },
-            "time": "2016-12-27T15:53:44+00:00"
-        },
-        {
             "name": "fabpot/goutte",
             "version": "v3.2.2",
             "source": {
