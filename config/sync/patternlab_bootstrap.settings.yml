@@ -19,3 +19,5 @@ cdn_provider: ''
 navbar_position: fixed-top
 table_responsive: '-1'
 table: ''
+navbar_inverse: 1
+cdn_provider_import_data: ''
