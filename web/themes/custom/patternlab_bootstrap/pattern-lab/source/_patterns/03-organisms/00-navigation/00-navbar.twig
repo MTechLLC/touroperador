@@ -2,8 +2,11 @@
 {%
   set navbar_classes = [
   'navbar',
-  ]
+  theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
+  theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
+]
 %}
+
 <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
   {% if not navbar_attributes.hasClass('container') %}
   <nav class="{{ container }}">
@@ -25,5 +28,4 @@
   {% if not navbar_attributes.hasClass('container') %}
   </nav>
   {% endif %}
-
 </header>

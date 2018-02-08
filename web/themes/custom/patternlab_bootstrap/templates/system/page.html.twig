@@ -55,42 +55,22 @@
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
-    {%
-      set navbar_classes = [
-        'navbar',
-        theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
-        theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
-      ]
-    %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-      {% if not navbar_attributes.hasClass(container) %}
-        <div class="{{ container }}">
-      {% endif %}
-      <div class="navbar-header">
-        {{ page.navigation }}
-        {# .btn-navbar is used as the toggle for collapsed navbar content #}
-        {% if page.navigation_collapsible %}
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        {% endif %}
-      </div>
 
-      {# Navigation (collapsible) #}
-      {% if page.navigation_collapsible %}
-        <div id="navbar-collapse" class="navbar-collapse collapse">
-          {{ page.navigation_collapsible }}
-        </div>
-      {% endif %}
-      {% if not navbar_attributes.hasClass(container) %}
-        </div>
-      {% endif %}
-    </header>
+    {% include '@organisms/00-navigation/00-navbar.twig'
+      with {
+      'brand': page.navigation,
+      'navigation_menus': page.navigation_collapsible
+    } %}
+
   {% endblock %}
 {% endif %}
+
+{# Banner #}
+{% set class_header = 'container-fluid main-page header-bg' %}
+  {% include '@organisms/00-global/header/header.twig'
+    with {
+    'attributes': class_header
+  } %}
 
 {# Main #}
 {% block main %}
@@ -116,14 +96,12 @@
       {% endif %}
 
       {# Content #}
-      {%
-        set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-        ]
-      %}
+      {% set content_classes = [
+        page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+        page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
+        page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+        page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+      ] %}
       <section{{ content_attributes.addClass(content_classes) }}>
 
         {# Highlighted #}
@@ -162,7 +140,10 @@
 {% if page.footer %}
   {% include '@organisms/00-global/footer/footer.twig'
     with {
-    'footer': page.footer
+    'footer': page.footer.poweredbymtech,
+    'design': page.footer.designmtechllc,
+    'menu_links': page.footer.patternlab_bootstrap_footer,
+    'logo': 'themes/custom/patternlab_bootstrap/pattern-lab/source/images/logo/logo.svg'
   } %}
 {% endif %}
 

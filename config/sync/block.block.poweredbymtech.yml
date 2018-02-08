@@ -1,0 +1,25 @@
+uuid: 8846a163-2219-4e43-8e08-9df3e2134fd2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4fcb39b3-2fb5-434c-b0ec-b478f01f9cee'
+  module:
+    - block_content
+  theme:
+    - patternlab_bootstrap
+id: poweredbymtech
+theme: patternlab_bootstrap
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:4fcb39b3-2fb5-434c-b0ec-b478f01f9cee'
+settings:
+  id: 'block_content:4fcb39b3-2fb5-434c-b0ec-b478f01f9cee'
+  label: 'Powered by MTech'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

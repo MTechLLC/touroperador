@@ -1,0 +1,25 @@
+uuid: 04f8bf0c-9444-431c-aa61-d37fc2bafc2f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:33f9fd39-d3a8-4b33-bbfc-2ba085430fd2'
+  module:
+    - block_content
+  theme:
+    - patternlab_bootstrap
+id: designmtechllc
+theme: patternlab_bootstrap
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:33f9fd39-d3a8-4b33-bbfc-2ba085430fd2'
+settings:
+  id: 'block_content:33f9fd39-d3a8-4b33-bbfc-2ba085430fd2'
+  label: 'Design MTech, LLC'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
