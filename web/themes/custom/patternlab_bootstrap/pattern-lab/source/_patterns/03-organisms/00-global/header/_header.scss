@@ -18,6 +18,10 @@ background: url(../images/header/pattern.png), linear-gradient(to left, #009688,
   border-bottom: 1px solid transparent;
 }
 
+.header-bg {
+  margin-top: -10px;
+}
+
 .header-bg h1.text-center {
     margin: 1.9em auto;
     display: block;
@@ -26,12 +30,11 @@ background: url(../images/header/pattern.png), linear-gradient(to left, #009688,
     font-size: 80px;
 }
 
-.navbar-inverse {
-  height: 70px;
-  background-color: #070148;
-  border-color: #070148;
-  .container {
-    margin-top: 10px;
-  }
+.navbar-inverse, .navbar-default {
+  border-color: white;
+  color: rgba(255,255,255,0.75);
+  background-color: white;
+  height: 54px;
+  box-shadow: rgba(0,0,0,0.16) 0px 2px 5px 0px, rgba(0,0,0,0.12) 0px 2px 10px 0px;
 }
 

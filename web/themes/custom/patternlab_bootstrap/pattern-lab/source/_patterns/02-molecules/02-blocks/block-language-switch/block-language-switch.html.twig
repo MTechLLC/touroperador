@@ -7,7 +7,6 @@ set languages_classes = [
 ]
 %}
 
-{% include 'molecules-links.html' with {
-	'links': links,
-	'attributes': attributes.addClass(languages_classes),
-} only %}
+<nav {{ attributes.addClass(languages_classes) }}>
+  {{ links }}
+</nav>

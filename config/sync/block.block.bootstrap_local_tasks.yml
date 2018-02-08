@@ -9,12 +9,12 @@ _core:
 id: bootstrap_local_tasks
 theme: bootstrap
 region: header
-weight: 10
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
+  label: Pestañas
   provider: core
   label_display: '0'
   primary: true

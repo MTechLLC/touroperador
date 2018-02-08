@@ -4,3 +4,23 @@ ul.language-switch li > a {
 		width: 30px;
 	}
 }
+
+.language-switch {
+  ul.links {
+    display: inline-flex;
+    margin-top: 17px;
+    li {
+      margin-left: 10px;
+      a {
+        display: inline-flex;
+        img {
+          margin-right: 5px;
+          width: 15px;
+          height: 15px;
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+
+}

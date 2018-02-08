@@ -12,9 +12,15 @@ header {
   }
 }
 a.name.navbar-brand {
-  color: white;
+  color: #004c99;
+  &:hover {
+    color: #004c99;
+  }
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: white;
+  color: #004c99;
+  &:hover {
+    color: #0C80FB;
+  }
 }

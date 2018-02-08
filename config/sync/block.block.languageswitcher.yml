@@ -1,0 +1,28 @@
+uuid: 5fcc967f-6b73-401d-8155-e0bdfa957e9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - patternlab_bootstrap
+id: languageswitcher
+theme: patternlab_bootstrap
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      es: es
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
