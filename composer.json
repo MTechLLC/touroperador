@@ -45,7 +45,7 @@
     "drupal/video_embed_field": "~1",
     "drupal/webform": "^5.0@RC",
     "drush/config-extra": "~1",
-    "drush/drush": "~8.0|^9.0.0-beta8",
+    "drush/drush": "~8",
     "geerlingguy/drupal-vm": "^4.7",
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3"
