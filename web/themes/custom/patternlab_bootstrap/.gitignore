@@ -1,7 +1,6 @@
 # Generated files
 /css
 /bootstrap
-/js
 bower_components
 *.css.map
 .DS_Store
