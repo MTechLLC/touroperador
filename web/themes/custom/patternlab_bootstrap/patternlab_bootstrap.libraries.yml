@@ -3,7 +3,7 @@ global-styling:
     theme:
       css/style.css: {}
   js:
-    js/base.js: {}
+    assets/js/base.js: {}
   dependecies:
     - core/drupal
     - core/drupalSettings
@@ -31,9 +31,3 @@ jquery-match-height:
   dependencies:
     - core/drupal
     - core/jquery
-
-font-awesome:
-  css:
-    theme:
-      /libraries/font-awesome/css/font-awesome.min.css: {}
-

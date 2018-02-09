@@ -1,0 +1,8 @@
+uuid: 148a6849-1678-4d41-9edb-0bb64a95902b
+langcode: en
+status: true
+dependencies: {  }
+id: primary-menu
+label: 'Primary Menu'
+description: ''
+locked: false

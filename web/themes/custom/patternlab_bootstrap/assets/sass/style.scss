@@ -1,0 +1,19 @@
+// Default variables.
+@import "default-variables";
+
+// Bootstrap Framework.
+@import '../../bootstrap/assets/stylesheets/bootstrap';
+
+// Base-theme overrides.
+@import 'component/overrides';
+
+//PatternLab SASS
+@import "component/utilities";
+@import "patternlab";
+
+//Fonts Awesome
+@import "awesome/fontawesome";
+
+//Theme PatternLab
+@import "organis/footer";
+@import "organis/header";

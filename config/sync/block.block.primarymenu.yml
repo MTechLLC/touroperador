@@ -1,0 +1,33 @@
+uuid: 3f8621d4-f1f4-4bc7-9caa-71b21e4fc144
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.primary-menu
+  module:
+    - language
+    - system
+  theme:
+    - patternlab_bootstrap
+id: primarymenu
+theme: patternlab_bootstrap
+region: navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:primary-menu'
+settings:
+  id: 'system_menu_block:primary-menu'
+  label: 'Primary Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      es: es
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a75f63438222caa222a7cb0fb0e5ea1",
+    "content-hash": "b81387ca544416841a2fe9c25908b5ba",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2986,17 +2986,17 @@
         },
         {
             "name": "drupal/link_attributes",
-            "version": "1.2.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/link_attributes",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/link_attributes-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "204a8d53c4746c7c5d5daccfe29df4fcfe8c2809"
+                "url": "https://ftp.drupal.org/files/projects/link_attributes-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "8a5851467f17c01b4dcb6e446f00cd7abe116475"
             },
             "require": {
                 "drupal/core": "*"
@@ -3007,12 +3007,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1514787185",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
+                    "version": "8.x-1.0",
+                    "datestamp": "1481849583"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3205,7 +3201,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/paragraphs",
-                "reference": "cdada93fdf2bc23266e2d315b798f46582851f1f"
+                "reference": "2d7183aea73eba2c53dcad11c1fd627e066d0974"
             },
             "require": {
                 "drupal/core": "~8",
@@ -3233,8 +3229,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2+29-dev",
-                    "datestamp": "1518015484",
+                    "version": "8.x-1.2+32-dev",
+                    "datestamp": "1518166381",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3272,7 +3268,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/paragraphs"
             },
-            "time": "2018-02-08T09:07:17+00:00"
+            "time": "2018-02-09T14:40:11+00:00"
         },
         {
             "name": "drupal/pathauto",
@@ -3786,6 +3782,53 @@
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            }
+        },
+        {
+            "name": "drupal/yaml_editor",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/yaml_editor",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/yaml_editor-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "06375ccd01bdc8bdf0685a04268fa85f2e0a519d"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1507935243",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "yannickoo",
+                    "homepage": "https://www.drupal.org/user/531118"
+                }
+            ],
+            "description": "Adds an editor for YAML configuration textareas.",
+            "homepage": "https://www.drupal.org/project/yaml_editor",
+            "support": {
+                "source": "http://cgit.drupalcode.org/yaml_editor"
             }
         },
         {

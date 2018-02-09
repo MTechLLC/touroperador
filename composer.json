@@ -33,7 +33,7 @@
     "drupal/google_analytics": "~2",
     "drupal/inline_entity_form": "1.x-dev",
     "drupal/languageicons": "1.x-dev",
-    "drupal/link_attributes": "^1.2",
+    "drupal/link_attributes": "^1.0",
     "drupal/migrate_plus": "~3",
     "drupal/migrate_tools": "~3",
     "drupal/ng_lightbox": "~1",
@@ -45,6 +45,7 @@
     "drupal/twig_tweak": "~1",
     "drupal/video_embed_field": "~1",
     "drupal/webform": "^5.0@RC",
+    "drupal/yaml_editor": "^1.0",
     "drush/config-extra": "~1",
     "drush/drush": "~8",
     "geerlingguy/drupal-vm": "^4.7",
@@ -85,13 +86,11 @@
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
     "post-install-cmd": [
       "DrupalProject\\composer\\ScriptHandler::buildScaffold",
-      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-      "@composer install --working-dir=web/themes/custom/patternlab_bootstrap/pattern-lab"
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
     ],
     "post-update-cmd": [
       "DrupalProject\\composer\\ScriptHandler::buildScaffold",
-      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-      "@composer install --working-dir=web/themes/custom/patternlab_bootstrap/pattern-lab"
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
     ]
   },
   "extra": {

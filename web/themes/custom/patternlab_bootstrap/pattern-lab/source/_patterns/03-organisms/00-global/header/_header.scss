@@ -5,11 +5,9 @@
 .header-bg {
   top: 0;
   width: auto;
- // background: url(../images/header/pattern.png),linear-gradient(to left,#7b4397,#dc2430);
-  //background: url(../images/header/pattern.png), linear-gradient(to left, #CDDC39, #dc2430);
-background: url(../images/header/pattern.png), linear-gradient(to left, #009688, #3F51B5);
- // background: url(../images/header/pattern.png), linear-gradient(to left, #CDDC39, #F44336);
-  height: 400px;
+  background: url(../assets/images/header/red-sun-purple-dream.jpg);
+  height: 470px;
+  background-position: center;
 }
 
 .page-header {
@@ -19,11 +17,11 @@ background: url(../images/header/pattern.png), linear-gradient(to left, #009688,
 }
 
 .header-bg {
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .header-bg h1.text-center {
-    margin: 1.9em auto;
+    margin: 2.3em auto;
     display: block;
     text-align: center;
     color: white;
@@ -34,7 +32,7 @@ background: url(../images/header/pattern.png), linear-gradient(to left, #009688,
   border-color: white;
   color: rgba(255,255,255,0.75);
   background-color: white;
-  height: 54px;
+  height: 50px;
   box-shadow: rgba(0,0,0,0.16) 0px 2px 5px 0px, rgba(0,0,0,0.12) 0px 2px 10px 0px;
 }
 
